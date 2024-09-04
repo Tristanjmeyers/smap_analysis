@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smap_analysis"
+description = "Python packages for manipulating and plotting SMAP data"
+authors = [
+    { name = "Tristan MEYERS", email = "tristan.meyers@niwa.co.nz" }
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "xarray",
+    "zarr",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "pydantic",
+    "netCDF4",
+    "kerchunk",
+    "h5py",
+    "dask[complete]",
+    "gcsfs",
+    "rioxarray",
+    "ease_grid",
+    "cartopy",
+    "colormaps",
+    "cfgrib",
+    "eccodes",
+    "s3fs"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pip-tools",
+    "ipykernel",
+    "pdbpp",
+    "memray",
+    "pyinstrument"
+]
+notebooks = [
+    "jupyter",
+    "notebook"
+]

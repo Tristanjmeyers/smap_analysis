@@ -1,0 +1,10 @@
+# data download directory
+n5eil01u.ecs.nsidc.org/
+
+# python related
+__pycache__
+.ipynb_checkpoints
+*egg-info
+venv
+Makefile
+requirements.txt
