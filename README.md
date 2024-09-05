@@ -21,3 +21,6 @@ conda activate SMAP
 
 python download_smap.py --start_date '2024-01-01' --end_date '2024-02-01'
 ```
+
+## Thanks
+Thanks to MBIE, NASA and NIWA for funding this work. 
